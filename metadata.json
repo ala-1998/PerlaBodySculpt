@@ -1,0 +1,7 @@
+{
+  "name": "Perla Body Sculpt",
+  "description": "Perla Body Sculpt - L'art de la chirurgie esthétique en Tunisie. Osez devenir celle que vous imaginez.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

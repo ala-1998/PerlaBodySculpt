@@ -1,0 +1,49 @@
+<svg viewBox="0 0 440 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background with subtle warm gradient matching the Gemini photo -->
+  <rect width="440" height="880" rx="24" fill="#FAF3F0"/>
+  
+  <!-- Group with exact line art in deep luxury navy-bordeaux -->
+  <g stroke="#1B172E" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- 1. Left Neck & Base -->
+    <path d="M 178 4 C 170 24, 154 44, 134 60 C 112 78, 92 92, 82 104" stroke-width="6.5"/>
+
+    <!-- 2. Right Neck & Base -->
+    <path d="M 292 4 C 304 28, 328 50, 368 78" stroke-width="6.5"/>
+
+    <!-- 3. Collarbone / Clavicle Accents -->
+    <path d="M 126 64 C 138 68, 152 70, 164 76" stroke-width="5"/>
+    <path d="M 188 84 C 206 80, 224 74, 240 70" stroke-width="5"/>
+
+    <!-- 4. Left Arm: Shoulder Cap -> Upper Arm -> Elbow -> Forearm -> Resting on Thigh -->
+    <path d="M 82 104 C 58 124, 34 154, 18 198 C 4 238, 2 272, 6 306 C 12 350, 30 400, 54 454 C 72 498, 84 542, 90 586 C 94 620, 94 658, 90 702 C 84 756, 74 816, 68 854" stroke-width="6.5"/>
+
+    <!-- Left Inner Arm Crease Line -->
+    <path d="M 52 228 C 54 264, 56 296, 66 330 C 74 368, 84 406, 86 440" stroke-width="5.5"/>
+
+    <!-- Left Ribcage / Torso Line (inside the arm opening) -->
+    <path d="M 58 134 C 54 158, 52 184, 56 214" stroke-width="5.5"/>
+
+    <!-- 5. Décolleté / Bust: Upper Breast Crease & Main Deep U-Scoop -->
+    <!-- Upper right breast curve -->
+    <path d="M 302 150 C 278 164, 252 176, 230 182" stroke-width="6"/>
+    
+    <!-- Signature deep U-scoop décolleté -->
+    <path d="M 288 225 C 258 246, 204 258, 152 258 C 114 258, 92 234, 84 192" stroke-width="7"/>
+
+    <!-- 6. Right Hourglass Contour: Armpit -> Narrow Waist -> Dramatic S-Curve Hip -> Thigh -->
+    <path d="M 296 226 C 274 264, 256 302, 256 346 C 256 385, 270 424, 298 468 C 334 518, 384 566, 412 622 C 430 660, 430 700, 406 748 C 378 798, 346 842, 320 878" stroke-width="7.5"/>
+
+    <!-- 7. Right Outer Arm / Back Line -->
+    <path d="M 368 78 C 392 126, 414 192, 426 264 C 438 340, 440 418, 436 484 C 434 516, 430 550, 420 584" stroke-width="7"/>
+
+    <!-- 8. Delicate Vertical Navel Accent -->
+    <path d="M 104 424 C 114 438, 114 452, 106 466" stroke-width="5.5"/>
+
+    <!-- 9. Groin / Inner Hip Accent Line -->
+    <path d="M 224 592 C 222 618, 216 646, 204 674" stroke-width="5.5"/>
+
+    <!-- 10. Left Inner Leg Contour -->
+    <path d="M 98 572 C 94 626, 88 704, 80 792 C 76 830, 72 864, 70 880" stroke-width="6"/>
+  </g>
+</svg>

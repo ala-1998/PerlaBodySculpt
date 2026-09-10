@@ -1,0 +1,43 @@
+<svg viewBox="0 0 300 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left Shoulder & Outer Arm -->
+  <path d="M 140 18 C 128 28, 112 40, 95 50 C 85 58, 80 75, 78 95 C 76 112, 78 128, 85 145" stroke="#43141C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right Shoulder & Outer Arm / Back -->
+  <path d="M 158 18 C 172 26, 195 36, 212 50 C 225 62, 235 85, 238 115 C 242 145, 248 185, 255 220 C 262 255, 268 290, 265 330" stroke="#43141C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Clavicle / Décolleté Accent -->
+  <path d="M 132 44 C 142 46, 152 45, 160 42" stroke="#43141C" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Left Inner Arm / Forearm resting on hip -->
+  <path d="M 82 125 C 86 142, 94 158, 108 170 C 114 176, 120 180, 128 178" stroke="#43141C" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Left Breast / Bust contour (Clean, natural, NO 8/8) -->
+  <path d="M 124 72 C 115 88, 114 105, 120 118 C 124 125, 132 128, 140 125" stroke="#43141C" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Right Breast / Decolleté Sweep (flowing gracefully under where 8/8 was) -->
+  <path d="M 148 58 C 160 68, 178 82, 185 102 C 190 118, 182 132, 166 136 C 158 138, 150 135, 145 130" stroke="#43141C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Inner bust crease detail -->
+  <path d="M 142 126 C 148 128, 155 128, 162 126" stroke="#43141C" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Left Torso / Waist curve -->
+  <path d="M 122 142 C 118 155, 116 168, 120 180" stroke="#43141C" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Right S-Curve Waist, Hourglass Hip and Thigh (The signature body contour from image 2) -->
+  <path d="M 182 118 C 178 135, 172 152, 174 170 C 176 188, 192 205, 208 222 C 224 240, 235 260, 232 285 C 228 310, 215 338, 202 368" stroke="#43141C" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Left Hip & Upper Thigh Contour -->
+  <path d="M 112 195 C 102 215, 96 238, 95 262 C 94 285, 98 310, 105 335" stroke="#43141C" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Lower Abdomen / Navel subtle hint -->
+  <path d="M 144 175 C 145 182, 145 188, 144 194" stroke="#43141C" stroke-width="1.2" stroke-linecap="round"/>
+
+  <!-- Groin / Pelvic crease line -->
+  <path d="M 128 215 C 134 225, 142 232, 152 235" stroke="#43141C" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Left Inner Thigh Contour Line -->
+  <path d="M 130 248 C 126 275, 122 305, 118 340 C 115 370, 114 400, 115 425" stroke="#43141C" stroke-width="1.8" stroke-linecap="round"/>
+
+  <!-- Right Inner Thigh Contour Line -->
+  <path d="M 154 242 C 150 268, 144 298, 138 330" stroke="#43141C" stroke-width="1.8" stroke-linecap="round"/>
+</svg>
