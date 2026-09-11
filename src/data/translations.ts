@@ -182,8 +182,8 @@ export const translations: TranslationDict = {
     ar: "تحولات مصممة بدقة جراحية وتناسق متكامل."
   },
   results_desc: {
-    en: "Browse verified aesthetic surgery and body sculpting results by our expert surgeon. Each procedure is tailored strictly to patient anatomy, medical indications, and personal expectations.",
-    fr: "Découvrez des exemples concrets d'interventions de chirurgie plastique et de remodelage corporel réalisées par notre chirurgien expert. Chaque geste est personnalisé selon votre morphologie et vos attentes.",
+    en: "Browse verified aesthetic surgery and body sculpting results by our expert surgeons. Each procedure is tailored strictly to patient anatomy, medical indications, and personal expectations.",
+    fr: "Découvrez des exemples concrets d'interventions de chirurgie plastique et de remodelage corporel réalisées par nos chirurgiens experts. Chaque geste est personnalisé selon votre morphologie et vos attentes.",
     ar: "استكشف نماذج حقيقية لعمليات جراحة التجميل ونحت الجسم بإشراف جراحنا المعتمد. يتم تصميم كل تدخل جراحي بدقة وفقاً لتشريح الجسم والأهداف الفردية."
   },
   results_interactive_hint: {

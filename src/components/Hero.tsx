@@ -29,6 +29,24 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
       id="home"
       className="relative min-h-[calc(100vh-68px)] flex items-center overflow-hidden bg-transparent text-[#43141C] py-10 lg:py-14"
     >
+      <style>{`
+        .water-bubble {
+          border-radius: 50%;
+          background: radial-gradient(
+            circle at 30% 30%,
+            rgba(255, 255, 255, 0.95) 0%,
+            rgba(253, 235, 242, 0.4) 40%,
+            rgba(226, 146, 179, 0.2) 80%,
+            rgba(200, 107, 145, 0.35) 100%
+          );
+          box-shadow:
+            inset 2px 2px 5px rgba(255, 255, 255, 0.9),
+            inset -2px -2px 6px rgba(180, 85, 125, 0.25),
+            0 4px 10px rgba(67, 20, 28, 0.08);
+          backdrop-filter: blur(2px);
+        }
+      `}</style>
+
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div className="absolute top-1/3 -right-20 w-[450px] h-[450px] rounded-full bg-[#F4E8E2]/60 blur-[120px]" />
@@ -39,7 +57,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
         {/* Bento Grid Container */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           
-          {/* Bento Cell 1: Large Main Command Card (2 cols, 2 rows on lg) */}
+          {/* Bento Cell 1: Large Main Command Card */}
           <div 
             id="hero-bento-main-card"
             className="lg:col-span-2 lg:row-span-2 bento-card p-8 sm:p-10 flex flex-col justify-between relative group border-[#D8C4BA]/50 bg-white/95 shadow-lg shadow-[#43141C]/5"
@@ -47,13 +65,13 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             <div className="absolute -bottom-20 -right-20 w-96 h-96 rounded-full bg-gradient-to-br from-[#FAF4F0] to-[#F5ECE6] opacity-70 blur-2xl pointer-events-none" />
             
             <div className="relative z-10">
-              {/* Bento Eyebrow Pill in Bordeaux & Pearlescent Ivory */}
+              {/* Eyebrow Pill */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-bold tracking-wider uppercase border border-[#D8C4BA]/60 mb-6 font-mono">
                 <Sparkles size={13} className="text-[#8B263E]" />
                 <span>{t('hero_eyebrow')}</span>
               </div>
 
-              {/* Main Headline: Osez devenir celle que vous imaginez */}
+              {/* Main Title */}
               <h1 
                 id="hero-main-title"
                 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#43141C] leading-[1.12] tracking-tight mb-5"
@@ -64,48 +82,59 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
                 </span>
               </h1>
 
-              {/* Mission Presentation Card with Pearl & Silhouette Palette */}
-              <div 
-                id="hero-instagram-presentation-box"
-                className="relative my-6 p-6 sm:p-7 rounded-2xl bg-gradient-to-br from-[#FFFDFC] via-[#FAF4F0] to-[#F7EEE8] border border-[#D8C4BA]/60 shadow-[0_10px_30px_rgba(67,20,28,0.05)] overflow-hidden"
-              >
-                {/* Floating 3D pearl & water bubble decoration matching the card */}
-                <div className="absolute -top-4 -right-4 w-20 h-20 pearl-sphere opacity-80 pointer-events-none" />
-                <div className="absolute bottom-2 right-16 w-8 h-8 water-bubble opacity-75 pointer-events-none" />
+              {/* Mission Presentation Card with Real Image Pearl */}
+              {/* Mission Presentation Card with Centered Pearl */}
+<div 
+  id="hero-instagram-presentation-box"
+  className="relative my-6 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-[#FFFDFC] via-[#FAF4F0] to-[#F7EEE8] border border-[#D8C4BA]/50 shadow-sm flex flex-col items-start"
+>
+  {/* Pearl Image - Centered directly above NOTRE MISSION */}
+  <div className="w-full flex justify-center mb-3">
+    <img 
+      src="/images/pearl.png" 
+      alt="Perla Pearl" 
+      className="w-40 h-40 sm:w-24 sm:h-24 object-contain filter drop-shadow-[0_8px_16px_rgba(67,20,28,0.12)]"
+    />
+  </div>
 
-                <div className="relative z-10">
-                  <div className="flex items-center gap-2 mb-2.5">
-                    <span className="text-[#8B263E] text-base">✦</span>
-                    <span className="font-serif text-xs sm:text-sm font-bold tracking-[0.18em] text-[#43141C] uppercase font-mono">
-                      NOTRE MISSION
-                    </span>
-                  </div>
+  {/* Section Header */}
+  <div className="w-full flex items-center justify-center gap-2 mb-4">
+    <span className="text-[#8B263E] text-xs">✦</span>
+    <span className="font-serif text-xs sm:text-sm font-bold tracking-[0.22em] text-[#43141C] uppercase font-mono">
+      NOTRE MISSION
+    </span>
+  </div>
 
-                  <p className="font-serif text-base sm:text-lg text-[#43141C] leading-snug font-medium mb-4 max-w-xl">
-                    Transformer votre expérience esthétique en un parcours serein, sécurisé et mémorable.
-                  </p>
+  {/* Mission Text */}
+  <p className="font-serif text-base sm:text-lg text-[#43141C] leading-snug font-medium mb-6 text-left w-full">
+    Transformer votre expérience esthétique en un parcours serein, sécurisé et mémorable.
+  </p>
 
-                  <div className="pt-3 border-t border-[#D8C4BA]/40 flex flex-wrap items-center justify-between gap-3">
-                    <div>
-                      <span className="font-serif text-xs tracking-widest text-[#8B263E] uppercase font-semibold">
-                        Perla Body Sculpt
-                      </span>
-                      <div className="font-serif text-sm sm:text-base font-bold text-[#43141C] italic">
-                        « La perle de votre corps de rêve »
-                      </div>
-                    </div>
+  {/* Divider Line */}
+  <div className="w-full h-[1px] bg-[#D8C4BA]/40 mb-5" />
 
-                    <div className="flex items-center gap-2 text-[11px] font-semibold text-[#6E2432] font-mono uppercase tracking-wider">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
-                      <span>Excellence</span>
-                      <span className="text-[#8B263E]">•</span>
-                      <span>Confiance</span>
-                      <span className="text-[#8B263E]">•</span>
-                      <span>Harmonie</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+  {/* Bottom Info */}
+  <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+    <div>
+      <span className="font-serif text-xs tracking-[0.18em] text-[#8B263E] uppercase font-semibold block mb-0.5">
+        PERLA BODY SCULPT
+      </span>
+      <div className="font-serif text-sm sm:text-base font-bold text-[#43141C] italic">
+        « La perle de votre corps de rêve »
+      </div>
+    </div>
+
+    {/* Badges / Values */}
+    <div className="flex items-center gap-2 text-[10px] sm:text-[11px] font-semibold text-[#6E2432] font-mono uppercase tracking-wider">
+      <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+      <span>EXCELLENCE</span>
+      <span className="text-[#8B263E]">•</span>
+      <span>CONFIANCE</span>
+      <span className="text-[#8B263E]">•</span>
+      <span>HARMONIE</span>
+    </div>
+  </div>
+</div>
 
               {/* Interactive CTAs */}
               <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -147,7 +176,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Bento Cell 2: Rating & Clinical Excellence Stat Tile */}
+          {/* Bento Cell 2 */}
           <div 
             id="hero-bento-stat-rating"
             className="bento-card p-7 flex flex-col justify-between bg-white/90 border-[#D8C4BA]/40 shadow-sm"
@@ -168,7 +197,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Bento Cell 3: Accredited Surgeon Profile Tile */}
+          {/* Bento Cell 3 */}
           <div 
             id="hero-bento-stat-surgeon"
             className="bento-card p-7 flex flex-col justify-between bg-white/90 border-[#D8C4BA]/40 shadow-sm"
@@ -194,7 +223,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Bento Cell 4: Visual Editorial Card (Résultats Naturels & Harmonieux) */}
+          {/* Bento Cell 4 */}
           <div 
             id="hero-bento-visual-card"
             className="bento-card relative overflow-hidden group min-h-[220px] border-[#D8C4BA]/40 shadow-sm"
@@ -215,7 +244,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Bento Cell 5: Confidentiality & Safety Protocol */}
+          {/* Bento Cell 5 */}
           <div 
             id="hero-bento-protocol-card"
             className="bento-card p-7 flex flex-col justify-between bg-white/90 border-[#D8C4BA]/40 shadow-sm"
@@ -232,7 +261,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Bento Cell 6: Direct Action Banner in Deep Velvet Bordeaux */}
+          {/* Bento Cell 6 */}
           <div 
             id="hero-bento-cta-banner"
             className="md:col-span-2 lg:col-span-2 rounded-[2rem] bg-gradient-to-r from-[#3A1017] to-[#43141C] border border-[#D8C4BA]/40 p-7 sm:p-8 flex flex-col sm:flex-row sm:items-center justify-between gap-5 shadow-xl text-[#FAF4F0]"
@@ -246,7 +275,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
                 Bilan Personnalisé en Clinique ou Visio
               </h3>
               <p className="text-[#E8D7D0] text-xs sm:text-sm mt-1 max-w-md">
-                Échangez avec notre chirurgien pour définir votre projet esthétique sur mesure.
+                Échangez avec nos chirurgiens pour définir votre projet esthétique sur mesure.
               </p>
             </div>
             <button 
@@ -259,7 +288,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </button>
           </div>
 
-          {/* Bento Cell 7: Location & Clinical Hub: Tunis · Lac 2 */}
+          {/* Bento Cell 7 */}
           <div 
             id="hero-bento-location-card"
             className="bento-card p-7 flex flex-col justify-between bg-white/90 border-[#D8C4BA]/40 shadow-sm"
@@ -278,7 +307,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             </div>
           </div>
 
-          {/* Bento Cell 8: Recovery & Support */}
+          {/* Bento Cell 8 */}
           <div 
             id="hero-bento-support-card"
             className="bento-card p-7 flex flex-col justify-between bg-white/90 border-[#D8C4BA]/40 shadow-sm"
