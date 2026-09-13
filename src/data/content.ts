@@ -388,7 +388,6 @@ export const beforeAfterGallery: BeforeAfterItem[] = [
     afterImg: '/images/results/abdominoplasty-femme-after.jpg',
     fullCompositeImg: '/images/results/abdominoplasty-femme-composite.jpg',
     timeframe: 'Résultat à 6 mois post-opératoire',
-    surgeon: 'Dr. Taher Jamel'
   },
   {
     id: 'ba-abdominoplasty-homme',
@@ -507,7 +506,7 @@ export const patientJourneySteps = [
     titleFr: 'Intervention Clinique',
     titleAr: 'إجراء جراحي فائق الدقة',
     descEn: 'Performed by our certified expert surgeon in state-of-the-art sterile operating theaters with international accreditation.',
-    descFr: 'Réalisée par nos chirurgien expert au sein de blocs opératoires ultramodernes certifiés aux normes internationales.',
+    descFr: 'Réalisée par nos chirurgiens experts au sein de blocs opératoires ultramodernes certifiés aux normes internationales.',
     descAr: 'تنفيذ العملية بإشراف جراحنا المعتمد في غرف عمليات معقمة ومجهزة بأحدث المعايير الدولية.'
   },
   {

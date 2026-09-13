@@ -236,10 +236,6 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     <span className="font-semibold text-[#43141C]">{selectedItem.procedure}</span>
                   </div>
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-[#6E2432]">Chirurgien :</span>
-                    <span className="font-semibold text-[#43141C]">Dr. Taher Jamel</span>
-                  </div>
-                  <div className="flex items-center justify-between text-xs">
                     <span className="text-[#6E2432]">Suivi clinique :</span>
                     <span className="font-semibold text-[#43141C]">Inclus avec séjour et soins infirmiers</span>
                   </div>
