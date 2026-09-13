@@ -65,7 +65,7 @@ export const Navigation: React.FC<NavigationProps> = ({
       {/* Top scroll progress indicator in Silhouette Rose / Burgundy */}
       <div 
         id="scroll-progress-bar"
-        className="fixed top-0 left-0 h-[3px] bg-[#8B263E] z-50 transition-all duration-150 shadow-[0_0_12px_rgba(139,38,62,0.6)]"
+        className="fixed top-0 left-0 h-[3px] bg-[#C9A6A5] z-50 transition-all duration-150 shadow-[0_0_12px_rgba(139,38,62,0.6)]"
         style={{ width: `${scrollProgress}%` }}
       />
 
@@ -140,7 +140,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   onClick={() => setIsDrawerOpen(false)}
                   className={`flex items-center justify-between py-3 px-4 rounded-xl text-xs tracking-[0.14em] uppercase transition ${
                     isActive
-                      ? 'bg-[#8B263E]/30 text-[#FAF4F0] border border-[#8B263E]/50 font-bold'
+                      ? 'bg-[#C9A6A5]/30 text-[#FAF4F0] border border-[#C9A6A5]/50 font-bold'
                       : 'text-[#E8D7D0] hover:text-white hover:bg-[#43141C] border border-transparent'
                   }`}
                 >
@@ -148,7 +148,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                     <span className="text-[#D8C4BA] font-mono text-[10px]">{item.num}</span>
                     <span>{t(item.labelKey)}</span>
                   </div>
-                  {isActive && <div className="w-2 h-2 rounded-full bg-[#8B263E] shadow-sm shadow-[#8B263E]/50" />}
+                  {isActive && <div className="w-2 h-2 rounded-full bg-[#C9A6A5] shadow-sm shadow-[#C9A6A5]/50" />}
                 </a>
               );
             })}
@@ -164,7 +164,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 onClick={() => onLanguageChange('en')}
                 className={`flex-1 py-1.5 text-xs rounded-xl transition ${
                   currentLang === 'en' 
-                    ? 'bg-[#8B263E] text-white font-bold shadow-sm' 
+                    ? 'bg-[#C9A6A5] text-white font-bold shadow-sm' 
                     : 'text-[#E8D7D0] hover:text-white'
                 }`}
               >
@@ -175,7 +175,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 onClick={() => onLanguageChange('fr')}
                 className={`flex-1 py-1.5 text-xs rounded-xl transition ${
                   currentLang === 'fr' 
-                    ? 'bg-[#8B263E] text-white font-bold shadow-sm' 
+                    ? 'bg-[#C9A6A5] text-white font-bold shadow-sm' 
                     : 'text-[#E8D7D0] hover:text-white'
                 }`}
               >
@@ -186,7 +186,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 onClick={() => onLanguageChange('ar')}
                 className={`flex-1 py-1.5 text-xs rounded-xl transition ${
                   currentLang === 'ar' 
-                    ? 'bg-[#8B263E] text-white font-bold shadow-sm' 
+                    ? 'bg-[#C9A6A5] text-white font-bold shadow-sm' 
                     : 'text-[#E8D7D0] hover:text-white'
                 }`}
               >
@@ -244,7 +244,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                 data-section={item.id}
                 className={`block relative text-center py-2 px-1 rounded-xl transition-all duration-300 group ${
                   isActive 
-                    ? 'bg-[#8B263E]/30 border border-[#8B263E]/50 shadow-sm' 
+                    ? 'bg-[#C9A6A5]/30 border border-[#C9A6A5]/50 shadow-sm' 
                     : 'hover:bg-[#43141C] border border-transparent'
                 }`}
               >
@@ -263,7 +263,7 @@ export const Navigation: React.FC<NavigationProps> = ({
                   {t(item.labelKey)}
                 </div>
                 {isActive && (
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#8B263E] mx-auto mt-1 shadow-sm shadow-[#8B263E]/60" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5] mx-auto mt-1 shadow-sm shadow-[#C9A6A5]/60" />
                 )}
               </a>
             );
@@ -318,7 +318,7 @@ export const Navigation: React.FC<NavigationProps> = ({
             className="flex items-center gap-2.5 hover:text-[#43141C] transition group"
           >
             <span className="w-7 h-7 rounded-lg bg-white border border-[#D8C4BA]/40 grid place-items-center group-hover:border-[#25D366]/50 transition shadow-xs">
-              <Phone size={11} className="text-[#8B263E] group-hover:text-[#25D366] transition" />
+              <Phone size={11} className="text-[#C9A6A5] group-hover:text-[#25D366] transition" />
             </span>
             <span className="font-mono tracking-wider font-semibold">{t('top_phone')}</span>
           </a>
@@ -328,14 +328,14 @@ export const Navigation: React.FC<NavigationProps> = ({
             id="utility-email-link"
             className="flex items-center gap-2.5 hover:text-[#43141C] transition group"
           >
-            <span className="w-7 h-7 rounded-lg bg-white border border-[#D8C4BA]/40 grid place-items-center group-hover:border-[#8B263E] transition shadow-xs">
-              <Mail size={11} className="text-[#8B263E]" />
+            <span className="w-7 h-7 rounded-lg bg-white border border-[#D8C4BA]/40 grid place-items-center group-hover:border-[#C9A6A5] transition shadow-xs">
+              <Mail size={11} className="text-[#C9A6A5]" />
             </span>
             <span className="font-medium tracking-wider">{t('top_email')}</span>
           </a>
 
           <div className="hidden xl:flex items-center gap-2 text-[#6E2432]">
-            <div className="w-2 h-2 rounded-full bg-[#8B263E] animate-pulse shadow-sm shadow-[#8B263E]/50" />
+            <div className="w-2 h-2 rounded-full bg-[#C9A6A5] animate-pulse shadow-sm shadow-[#C9A6A5]/50" />
             <span className="font-mono text-[10px] uppercase font-bold">{t('top_location')}</span>
           </div>
         </div>

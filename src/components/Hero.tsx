@@ -67,7 +67,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
             <div className="relative z-10">
               {/* Eyebrow Pill */}
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-bold tracking-wider uppercase border border-[#D8C4BA]/60 mb-6 font-mono">
-                <Sparkles size={13} className="text-[#8B263E]" />
+                <Sparkles size={13} className="text-[#C9A6A5]" />
                 <span>{t('hero_eyebrow')}</span>
               </div>
 
@@ -77,7 +77,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
                 className="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-[#43141C] leading-[1.12] tracking-tight mb-5"
               >
                 {t('hero_title_1')}{' '}
-                <span className="text-[#8B263E] italic font-normal underline decoration-[#E8D7D0] decoration-wavy decoration-1 underline-offset-8">
+                <span className="text-[#C9A6A5] italic font-normal underline decoration-[#E8D7D0] decoration-wavy decoration-1 underline-offset-8">
                   {t('hero_title_highlight')}
                 </span>
               </h1>
@@ -99,7 +99,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
 
   {/* Section Header */}
   <div className="w-full flex items-center justify-center gap-2 mb-4">
-    <span className="text-[#8B263E] text-xs">✦</span>
+    <span className="text-[#C9A6A5] text-xs">✦</span>
     <span className="font-serif text-xs sm:text-sm font-bold tracking-[0.22em] text-[#43141C] uppercase font-mono">
       NOTRE MISSION
     </span>
@@ -116,7 +116,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
   {/* Bottom Info */}
   <div className="w-full flex flex-col sm:flex-row sm:items-center justify-between gap-4">
     <div>
-      <span className="font-serif text-xs tracking-[0.18em] text-[#8B263E] uppercase font-semibold block mb-0.5">
+      <span className="font-serif text-xs tracking-[0.18em] text-[#C9A6A5] uppercase font-semibold block mb-0.5">
         PERLA BODY SCULPT
       </span>
       <div className="font-serif text-sm sm:text-base font-bold text-[#43141C] italic">
@@ -126,11 +126,11 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
 
     {/* Badges / Values */}
     <div className="flex items-center gap-2 text-[10px] sm:text-[11px] font-semibold text-[#6E2432] font-mono uppercase tracking-wider">
-      <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+      <span className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5]" />
       <span>EXCELLENCE</span>
-      <span className="text-[#8B263E]">•</span>
+      <span className="text-[#C9A6A5]">•</span>
       <span>CONFIANCE</span>
-      <span className="text-[#8B263E]">•</span>
+      <span className="text-[#C9A6A5]">•</span>
       <span>HARMONIE</span>
     </div>
   </div>
@@ -150,7 +150,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
                 <a
                   id="hero-secondary-explore-btn"
                   href="#procedures"
-                  className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl bg-white border border-[#D8C4BA]/60 text-[#43141C] text-xs font-semibold hover:border-[#8B263E] hover:text-[#8B263E] transition duration-300 shadow-sm"
+                  className="inline-flex items-center gap-2 px-6 py-4 rounded-2xl bg-white border border-[#D8C4BA]/60 text-[#43141C] text-xs font-semibold hover:border-[#C9A6A5] hover:text-[#C9A6A5] transition duration-300 shadow-sm"
                 >
                   <span>{t('hero_explore_btn')}</span>
                 </a>
@@ -162,7 +162,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
               <div className="flex gap-2 items-end">
                 <div className="w-2.5 h-6 bg-[#FAF4F0] rounded-full" />
                 <div className="w-2.5 h-10 bg-[#FAF4F0] rounded-full" />
-                <div className="w-2.5 h-16 bg-[#8B263E] rounded-full shadow-md shadow-[#8B263E]/30" />
+                <div className="w-2.5 h-16 bg-[#C9A6A5] rounded-full shadow-md shadow-[#C9A6A5]/30" />
                 <div className="w-2.5 h-12 bg-[#FAF4F0] rounded-full" />
                 <div className="w-2.5 h-20 bg-[#43141C] rounded-full shadow-md shadow-[#43141C]/20" />
                 <div className="w-2.5 h-8 bg-[#FAF4F0] rounded-full" />
@@ -183,7 +183,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
           >
             <div className="flex items-center justify-between">
               <div className="w-11 h-11 rounded-2xl bg-[#43141C]/10 border border-[#D8C4BA]/40 flex items-center justify-center text-[#43141C] shadow-sm">
-                <Star size={20} fill="#8B263E" className="text-[#8B263E]" />
+                <Star size={20} fill="#C9A6A5" className="text-[#C9A6A5]" />
               </div>
               <div className="text-[#43141C] text-xs font-mono font-bold px-2.5 py-1 rounded-full bg-[#43141C]/5 border border-[#D8C4BA]/40">
                 +98% Satisfaction
@@ -251,9 +251,9 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
           >
             <div className="flex items-center justify-between">
               <div className="w-11 h-11 rounded-2xl bg-[#43141C]/10 border border-[#D8C4BA]/40 flex items-center justify-center text-[#43141C]">
-                <Lock size={18} className="text-[#8B263E]" />
+                <Lock size={18} className="text-[#C9A6A5]" />
               </div>
-              <div className="w-2.5 h-2.5 bg-[#8B263E] rounded-full animate-pulse shadow-sm shadow-[#8B263E]/40" />
+              <div className="w-2.5 h-2.5 bg-[#C9A6A5] rounded-full animate-pulse shadow-sm shadow-[#C9A6A5]/40" />
             </div>
             <div>
               <p className="text-sm font-bold text-[#43141C] uppercase tracking-wider font-mono">100% Confidentiel</p>
@@ -297,7 +297,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
               <span className="text-[10px] font-bold text-[#6E2432] tracking-widest uppercase font-mono">
                 CLINICAL HUB
               </span>
-              <div className="w-2.5 h-2.5 bg-[#8B263E] rounded-full animate-pulse shadow-sm shadow-[#8B263E]/40" />
+              <div className="w-2.5 h-2.5 bg-[#C9A6A5] rounded-full animate-pulse shadow-sm shadow-[#C9A6A5]/40" />
             </div>
             <div className="flex items-center gap-3">
               <div>
@@ -316,7 +316,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
               <span className="text-[10px] font-bold text-[#6E2432] tracking-widest uppercase font-mono">
                 SUIVI POST-OP
               </span>
-              <div className="text-[#43141C] text-xs font-mono font-bold bg-[#8B263E]/10 border border-[#8B263E]/20 px-2 py-0.5 rounded">24/7</div>
+              <div className="text-[#43141C] text-xs font-mono font-bold bg-[#C9A6A5]/10 border border-[#C9A6A5]/20 px-2 py-0.5 rounded">24/7</div>
             </div>
             <div className="space-y-2">
               <div className="flex items-center justify-between text-xs">
@@ -324,7 +324,7 @@ export const Hero: React.FC<HeroProps> = ({ currentLang, onOpenBooking }) => {
                 <span className="text-[#43141C] font-bold">100%</span>
               </div>
               <div className="h-2 w-full bg-[#FAF4F0] rounded-full overflow-hidden border border-[#D8C4BA]/30">
-                <div className="h-full bg-[#8B263E] w-full rounded-full shadow-sm shadow-[#8B263E]/40" />
+                <div className="h-full bg-[#C9A6A5] w-full rounded-full shadow-sm shadow-[#C9A6A5]/40" />
               </div>
             </div>
             <p className="text-[10px] text-[#6E2432] font-mono uppercase">Infirmière dédiée incluse</p>

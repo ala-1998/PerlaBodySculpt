@@ -54,7 +54,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
           <div className="max-w-3xl">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-mono font-bold uppercase tracking-wider border border-[#D8C4BA]/60 mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5]" />
               <span>{t('procedures_tag')}</span>
             </div>
             <h2 
@@ -107,7 +107,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
               <div
                 key={cat.id}
                 id={`category-card-${cat.id}`}
-                className="group rounded-3xl bg-white border border-[#D8C4BA]/50 shadow-lg shadow-[#43141C]/5 overflow-hidden flex flex-col justify-between hover:shadow-xl hover:border-[#8B263E]/40 transition-all duration-300"
+                className="group rounded-3xl bg-white border border-[#D8C4BA]/50 shadow-lg shadow-[#43141C]/5 overflow-hidden flex flex-col justify-between hover:shadow-xl hover:border-[#C9A6A5]/40 transition-all duration-300"
               >
                 <div>
                   {/* Category Image - Click to view full poster */}
@@ -133,7 +133,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                     </div>
 
                     {cat.popular && (
-                      <div className="absolute top-4 right-4 bg-[#8B263E] text-[#FAF4F0] text-[10px] font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-xl shadow-md">
+                      <div className="absolute top-4 right-4 bg-[#C9A6A5] text-[#FAF4F0] text-[10px] font-mono font-bold uppercase tracking-wider px-3 py-1 rounded-xl shadow-md">
                         Signature
                       </div>
                     )}
@@ -147,7 +147,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                     
                     {/* Pearl & Silhouette Accent Bar */}
                     <div className="flex items-center gap-1.5 my-3.5">
-                      <div className="w-10 h-1 bg-[#8B263E] rounded-full" />
+                      <div className="w-10 h-1 bg-[#C9A6A5] rounded-full" />
                       <div className="w-2.5 h-1 bg-[#D8C4BA] rounded-full" />
                     </div>
 
@@ -161,9 +161,9 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                         <div 
                           key={idx}
                           onClick={() => onOpenBooking(`${cat.title} - ${item}`)}
-                          className="flex items-start gap-2.5 text-xs text-[#43141C] font-medium hover:text-[#8B263E] cursor-pointer group/item transition-colors"
+                          className="flex items-start gap-2.5 text-xs text-[#43141C] font-medium hover:text-[#C9A6A5] cursor-pointer group/item transition-colors"
                         >
-                          <span className="text-[#8B263E] font-bold text-sm leading-none">•</span>
+                          <span className="text-[#C9A6A5] font-bold text-sm leading-none">•</span>
                           <span className="group-hover/item:translate-x-0.5 transition-transform">{item}</span>
                         </div>
                       ))}
@@ -178,7 +178,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                     onClick={() => setSelectedCategoryModal(cat)}
                     className="flex-1 py-3 px-4 rounded-xl bg-[#FAF4F0] hover:bg-[#F5ECE6] text-[#43141C] text-xs font-bold font-mono tracking-wider uppercase transition flex items-center justify-center gap-1.5 border border-[#D8C4BA]/50"
                   >
-                    <Info size={13} className="text-[#8B263E]" />
+                    <Info size={13} className="text-[#C9A6A5]" />
                     <span>+ d'info</span>
                   </button>
 
@@ -237,7 +237,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                   <div
                     key={proc.id}
                     id={`procedure-card-${proc.id}`}
-                    className="bento-card group flex flex-col justify-between border-[#D8C4BA]/50 bg-white/95 shadow-md overflow-hidden hover:border-[#8B263E]/40 transition"
+                    className="bento-card group flex flex-col justify-between border-[#D8C4BA]/50 bg-white/95 shadow-md overflow-hidden hover:border-[#C9A6A5]/40 transition"
                   >
                     {/* Image header */}
                     <div className="relative h-48 overflow-hidden bg-[#2D0C13]">
@@ -250,7 +250,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                       <div className="absolute inset-0 bg-gradient-to-t from-[#2D0C13]/90 via-[#2D0C13]/30 to-transparent" />
                       
                       {proc.popular && (
-                        <div className="absolute top-3 right-3 bg-[#8B263E] text-white text-[9px] font-bold uppercase font-mono tracking-wider px-3 py-1 rounded-xl shadow-md">
+                        <div className="absolute top-3 right-3 bg-[#C9A6A5] text-white text-[9px] font-bold uppercase font-mono tracking-wider px-3 py-1 rounded-xl shadow-md">
                           Signature Care
                         </div>
                       )}
@@ -274,7 +274,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
 
                         {proc.indication && (
                           <div className="mt-3 p-2.5 rounded-xl bg-[#FAF4F0] border border-[#D8C4BA]/40 text-[11px] text-[#43141C]">
-                            <span className="font-bold text-[#8B263E]">Indication : </span>
+                            <span className="font-bold text-[#C9A6A5]">Indication : </span>
                             <span>{proc.indication}</span>
                           </div>
                         )}
@@ -285,28 +285,28 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                         <div className="mt-4 pt-4 border-t border-[#D8C4BA]/40 space-y-2.5 text-xs text-[#6E2432] animate-in fade-in duration-200">
                           <div className="flex items-center justify-between">
                             <span className="text-[#6E2432] flex items-center gap-1.5 font-mono text-[11px]">
-                              <Clock size={12} className="text-[#8B263E]" />
+                              <Clock size={12} className="text-[#C9A6A5]" />
                               {t('spec_duration')}
                             </span>
                             <span className="font-semibold text-[#43141C]">{proc.duration}</span>
                           </div>
                           <div className="flex items-center justify-between">
                             <span className="text-[#6E2432] flex items-center gap-1.5 font-mono text-[11px]">
-                              <Activity size={12} className="text-[#8B263E]" />
+                              <Activity size={12} className="text-[#C9A6A5]" />
                               {t('spec_anesthesia')}
                             </span>
                             <span className="font-semibold text-[#43141C]">{proc.anesthesia}</span>
                           </div>
                           <div className="flex items-center justify-between">
                             <span className="text-[#6E2432] flex items-center gap-1.5 font-mono text-[11px]">
-                              <Bed size={12} className="text-[#8B263E]" />
+                              <Bed size={12} className="text-[#C9A6A5]" />
                               {t('spec_stay')}
                             </span>
                             <span className="font-semibold text-[#43141C]">{proc.hospitalStay}</span>
                           </div>
                           <div className="flex items-center justify-between">
                             <span className="text-[#6E2432] flex items-center gap-1.5 font-mono text-[11px]">
-                              <CalendarCheck size={12} className="text-[#8B263E]" />
+                              <CalendarCheck size={12} className="text-[#C9A6A5]" />
                               {t('spec_recovery')}
                             </span>
                             <span className="font-semibold text-[#43141C]">{proc.recovery}</span>
@@ -359,7 +359,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
               </button>
 
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-xs font-mono font-bold px-3 py-1 rounded-lg bg-[#FAF4F0] text-[#8B263E] border border-[#D8C4BA]/50">
+                <span className="text-xs font-mono font-bold px-3 py-1 rounded-lg bg-[#FAF4F0] text-[#C9A6A5] border border-[#D8C4BA]/50">
                   PÔLE {selectedCategoryModal.badgeNumber}
                 </span>
                 <span className="text-xs text-[#6E2432] uppercase tracking-wider font-mono">
@@ -372,7 +372,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
               </h3>
               
               <div className="flex items-center gap-1.5 my-3">
-                <div className="w-12 h-1 bg-[#8B263E] rounded-full" />
+                <div className="w-12 h-1 bg-[#C9A6A5] rounded-full" />
                 <div className="w-3 h-1 bg-[#D8C4BA] rounded-full" />
               </div>
 
@@ -405,7 +405,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
                       className="p-3.5 rounded-xl bg-[#FAF4F0] border border-[#D8C4BA]/50 flex items-center justify-between"
                     >
                       <div className="flex items-center gap-2.5">
-                        <CheckCircle2 size={15} className="text-[#8B263E] shrink-0" />
+                        <CheckCircle2 size={15} className="text-[#C9A6A5] shrink-0" />
                         <span className="text-xs font-semibold text-[#43141C]">{item}</span>
                       </div>
                     </div>
@@ -415,7 +415,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
 
               <div className="p-5 rounded-2xl bg-gradient-to-br from-[#FAF4F0] to-[#F5ECE6] border border-[#D8C4BA]/60 mb-6">
                 <div className="flex items-center gap-2 text-xs font-bold text-[#43141C] font-mono uppercase mb-2">
-                  <Sparkles size={14} className="text-[#8B263E]" />
+                  <Sparkles size={14} className="text-[#C9A6A5]" />
                   <span>Séjour Médical Tout Inclus</span>
                 </div>
                 <p className="text-xs text-[#6E2432] leading-relaxed">

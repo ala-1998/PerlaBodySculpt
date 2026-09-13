@@ -35,7 +35,7 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-mono font-bold uppercase tracking-wider border border-[#D8C4BA]/50 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5]" />
             <span>{t('faq_tag')}</span>
           </div>
           <h2 
@@ -59,9 +59,9 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
             >
               <div>
                 <div className="flex items-center justify-between mb-4">
-                  <div className="flex gap-1 text-[#8B263E]">
+                  <div className="flex gap-1 text-[#C9A6A5]">
                     {[...Array(test.rating)].map((_, i) => (
-                      <Star key={i} size={14} fill="#8B263E" />
+                      <Star key={i} size={14} fill="#C9A6A5" />
                     ))}
                   </div>
                   <Quote size={20} className="text-[#D8C4BA]" />
@@ -77,12 +77,12 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
                   <h4 className="font-serif text-sm font-semibold text-[#43141C]">
                     {test.name}
                   </h4>
-                  <p className="text-[10px] text-[#8B263E] font-mono font-medium mt-0.5">
+                  <p className="text-[10px] text-[#C9A6A5] font-mono font-medium mt-0.5">
                     {test.procedure}
                   </p>
                 </div>
                 <div className="text-[10px] text-[#6E2432] font-mono flex items-center gap-1">
-                  <MapPin size={11} className="text-[#8B263E]" />
+                  <MapPin size={11} className="text-[#C9A6A5]" />
                   <span>{test.location}</span>
                 </div>
               </div>
@@ -93,7 +93,7 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
         {/* FAQ Accordion Section in Bento Card */}
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center gap-2 text-xs uppercase font-mono tracking-wider text-[#43141C] font-bold mb-6">
-            <HelpCircle size={15} className="text-[#8B263E]" />
+            <HelpCircle size={15} className="text-[#C9A6A5]" />
             <span>Questions Fréquentes de nos Patients</span>
           </div>
 

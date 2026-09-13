@@ -507,7 +507,7 @@ export const patientJourneySteps = [
     titleFr: 'Intervention Clinique',
     titleAr: 'إجراء جراحي فائق الدقة',
     descEn: 'Performed by our certified expert surgeon in state-of-the-art sterile operating theaters with international accreditation.',
-    descFr: 'Réalisée par notre chirurgien expert au sein de blocs opératoires ultramodernes certifiés aux normes internationales.',
+    descFr: 'Réalisée par nos chirurgien expert au sein de blocs opératoires ultramodernes certifiés aux normes internationales.',
     descAr: 'تنفيذ العملية بإشراف جراحنا المعتمد في غرف عمليات معقمة ومجهزة بأحدث المعايير الدولية.'
   },
   {
@@ -608,12 +608,12 @@ export const faqData: FAQItem[] = [
   {
     id: 'faq-2',
     questionKey: 'Comment s’organise le séjour pour les patientes et patients venant de l’étranger ?',
-    answerKey: 'Nous proposons un parcours complet : pré-consultation virtuelle détaillée avec notre chirurgien sur photographies médicales, accueil VIP à l’aéroport de Tunis-Carthage, prise en charge des transferts privés, séjour en clinique accréditée et hébergement en hôtel partenaire pour une convalescence sereine.'
+    answerKey: 'Nous proposons un parcours complet : pré-consultation virtuelle détaillée avec nos chirurgiens sur photographies médicales, accueil VIP à l’aéroport de Tunis-Carthage, prise en charge des transferts privés, séjour en clinique accréditée et hébergement en hôtel partenaire pour une convalescence sereine.'
   },
   {
     id: 'faq-3',
     questionKey: 'Les cicatrices sont-elles visibles ?',
-    answerKey: 'Toutes les incisions sont stratégiquement dissimulées dans les plis naturels de l’anatomie ou sous la ligne du maillot de bain (abdominoplastie, BBL). Notre chirurgien utilise des techniques de suture sous-cutanée de haute précision et prescrit des soins cicatrisants au laser et silicones pour estomper la cicatrice.'
+    answerKey: 'Toutes les incisions sont stratégiquement dissimulées dans les plis naturels de l’anatomie ou sous la ligne du maillot de bain (abdominoplastie, BBL). Nos chirurgiens utilisent des techniques de suture sous-cutanée de haute précision et prescrit des soins cicatrisants au laser et silicones pour estomper la cicatrice.'
   },
   {
     id: 'faq-4',

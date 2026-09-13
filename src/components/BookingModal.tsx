@@ -159,7 +159,7 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
         <div className="bg-[#2D0C13] text-[#FAF4F0] p-6 sm:p-8 flex items-start justify-between border-b border-[#D8C4BA]/30">
           <div>
             <div className="flex items-center gap-2 text-[10px] font-mono uppercase tracking-wider text-[#D8C4BA] font-bold">
-              <ShieldCheck size={14} className="text-[#8B263E]" />
+              <ShieldCheck size={14} className="text-[#C9A6A5]" />
               <span>Perla Body Sculpt · Dr. Taher Jamel · Tunis</span>
             </div>
             <h2 className="font-serif text-2xl sm:text-3xl font-semibold mt-1 text-white">
@@ -230,7 +230,7 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
                 >
                   {copied ? (
                     <>
-                      <Check size={14} className="text-[#8B263E]" />
+                      <Check size={14} className="text-[#C9A6A5]" />
                       <span className="text-[#43141C] font-semibold">Texte copié dans le presse-papier !</span>
                     </>
                   ) : (
@@ -258,7 +258,7 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
                 </div>
                 <div className="flex justify-between border-b border-[#D8C4BA]/30 pb-2">
                   <span className="text-[#6E2432]">Intervention :</span>
-                  <span className="font-semibold text-[#8B263E]">{formData.procedure}</span>
+                  <span className="font-semibold text-[#C9A6A5]">{formData.procedure}</span>
                 </div>
                 <div className="flex justify-between border-b border-[#D8C4BA]/30 pb-2">
                   <span className="text-[#6E2432]">Format :</span>
@@ -310,11 +310,11 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
                     onClick={() => setFormData({ ...formData, consultationType: 'clinic' })}
                     className={`p-4 rounded-2xl border text-left flex items-center gap-3 transition ${
                       formData.consultationType === 'clinic'
-                        ? 'border-[#8B263E] bg-[#43141C]/5 text-[#43141C] ring-1 ring-[#8B263E]'
+                        ? 'border-[#C9A6A5] bg-[#43141C]/5 text-[#43141C] ring-1 ring-[#C9A6A5]'
                         : 'border-[#D8C4BA]/40 bg-[#FAF4F0] hover:border-[#43141C]'
                     }`}
                   >
-                    <MapPin size={16} className="text-[#8B263E] shrink-0" />
+                    <MapPin size={16} className="text-[#C9A6A5] shrink-0" />
                     <div className="text-xs">
                       <div className="font-semibold text-[#43141C]">{t('form_type_clinic')}</div>
                       <div className="text-[10px] text-[#6E2432]">Les Berges du Lac 2, Tunis</div>
@@ -327,11 +327,11 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
                     onClick={() => setFormData({ ...formData, consultationType: 'virtual' })}
                     className={`p-4 rounded-2xl border text-left flex items-center gap-3 transition ${
                       formData.consultationType === 'virtual'
-                        ? 'border-[#8B263E] bg-[#43141C]/5 text-[#43141C] ring-1 ring-[#8B263E]'
+                        ? 'border-[#C9A6A5] bg-[#43141C]/5 text-[#43141C] ring-1 ring-[#C9A6A5]'
                         : 'border-[#D8C4BA]/40 bg-[#FAF4F0] hover:border-[#43141C]'
                     }`}
                   >
-                    <Video size={16} className="text-[#8B263E] shrink-0" />
+                    <Video size={16} className="text-[#C9A6A5] shrink-0" />
                     <div className="text-xs">
                       <div className="font-semibold text-[#43141C]">{t('form_type_virtual')}</div>
                       <div className="text-[10px] text-[#6E2432]">Visio sécurisée (Zoom / WhatsApp)</div>
@@ -466,7 +466,7 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
                   type="submit"
                   className="w-full py-4 bg-[#43141C] hover:bg-[#5A1C28] text-[#FAF4F0] text-xs font-bold tracking-wider uppercase rounded-2xl transition duration-300 shadow-xl shadow-[#43141C]/20 border border-[#D8C4BA]/50 flex items-center justify-center gap-2.5 group"
                 >
-                  <MessageCircle size={16} className="text-[#8B263E]" />
+                  <MessageCircle size={16} className="text-[#C9A6A5]" />
                   <span>
                     {currentLang === 'ar' 
                       ? 'إرسال الطلب وحجز الموعد عبر واتساب' 
@@ -475,7 +475,7 @@ _Demande transmise via le formulaire officiel de perlabodysculpt.com_`;
                   <ArrowRight size={14} className="group-hover:translate-x-0.5 transition-transform" />
                 </button>
                 <div className="flex items-center justify-center gap-1.5 text-xs text-[#6E2432] mt-3 font-mono">
-                  <Lock size={12} className="text-[#8B263E]" />
+                  <Lock size={12} className="text-[#C9A6A5]" />
                   <span>Vos données sont transmises directement et en toute confidentialité sur le WhatsApp officiel.</span>
                 </div>
               </div>

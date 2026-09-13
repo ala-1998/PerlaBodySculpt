@@ -68,7 +68,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
       className="relative overflow-hidden py-20 lg:py-28 px-4 sm:px-8 lg:px-12 xl:px-16 bg-transparent text-[#43141C]"
     >
       {/* Background ambient lighting */}
-      <div className="absolute top-20 right-10 w-96 h-96 rounded-full bg-[#8B263E]/5 blur-[130px] pointer-events-none" />
+      <div className="absolute top-20 right-10 w-96 h-96 rounded-full bg-[#C9A6A5]/5 blur-[130px] pointer-events-none" />
       <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-[#F4E8E2] blur-[140px] pointer-events-none" />
 
       <div className="max-w-[1540px] mx-auto relative z-10">
@@ -77,7 +77,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
         <div className="grid lg:grid-cols-12 gap-8 items-end mb-12">
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-mono font-bold uppercase tracking-wider border border-[#D8C4BA]/60 mb-4">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+              <span className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5]" />
               <span>{t('results_tag')}</span>
             </div>
             <h2 
@@ -136,7 +136,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     className="max-h-[520px] w-auto max-w-full object-contain rounded-2xl shadow-2xl transition duration-300"
                   />
                   <div className="absolute top-4 left-4 bg-[#2D0C13]/90 backdrop-blur-md px-3.5 py-1.5 rounded-xl text-[10px] font-mono uppercase tracking-wider font-bold border border-[#D8C4BA]/40 text-[#FAF4F0] flex items-center gap-1.5 shadow-md">
-                    <Sparkles size={12} className="text-[#8B263E]" />
+                    <Sparkles size={12} className="text-[#C9A6A5]" />
                     <span>Avant / Après Officiel</span>
                   </div>
                   <button
@@ -182,7 +182,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     className="absolute top-0 bottom-0 w-0.5 bg-white shadow-lg pointer-events-none"
                     style={{ left: `${sliderPosition}%` }}
                   >
-                    <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-[#8B263E] text-white grid place-items-center shadow-lg border-2 border-white slider-thumb-shadow">
+                    <div className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-11 h-11 rounded-full bg-[#C9A6A5] text-white grid place-items-center shadow-lg border-2 border-white slider-thumb-shadow">
                       <SlidersHorizontal size={14} className="rotate-90" />
                     </div>
                   </div>
@@ -199,7 +199,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
 
                   {/* Hint badge at bottom */}
                   <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-[#2D0C13]/85 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-mono tracking-wider text-[#FAF4F0] border border-[#D8C4BA]/40 pointer-events-none flex items-center gap-2">
-                    <SlidersHorizontal size={12} className="text-[#8B263E]" />
+                    <SlidersHorizontal size={12} className="text-[#C9A6A5]" />
                     <span>{t('results_interactive_hint')}</span>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     {selectedItem.badge}
                   </span>
                   <div className="flex items-center gap-1.5 text-xs text-[#6E2432] font-mono">
-                    <Clock size={13} className="text-[#8B263E]" />
+                    <Clock size={13} className="text-[#C9A6A5]" />
                     <span>{selectedItem.timeframe}</span>
                   </div>
                 </div>
@@ -280,8 +280,8 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                 }}
                 className={`group cursor-pointer bento-card bg-white transition-all duration-300 ${
                   isCurrentSelected 
-                    ? 'border-[#8B263E] ring-2 ring-[#8B263E]/30 shadow-xl' 
-                    : 'border-[#D8C4BA]/50 hover:border-[#8B263E]'
+                    ? 'border-[#C9A6A5] ring-2 ring-[#C9A6A5]/30 shadow-xl' 
+                    : 'border-[#D8C4BA]/50 hover:border-[#C9A6A5]'
                 }`}
               >
                 {/* Images preview: either Single Composite Image or Side-by-side */}
@@ -293,7 +293,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                       className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 rounded-xl shadow-lg"
                     />
                     <div className="absolute top-3 left-3 bg-[#2D0C13]/90 backdrop-blur-md px-2.5 py-1 rounded-md text-[9px] font-mono uppercase tracking-wider font-bold text-[#FAF4F0] border border-[#D8C4BA]/40 flex items-center gap-1.5 shadow-sm">
-                      <Sparkles size={10} className="text-[#8B263E]" />
+                      <Sparkles size={10} className="text-[#C9A6A5]" />
                       <span>Avant / Après</span>
                     </div>
                     <button
@@ -302,7 +302,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                         e.stopPropagation();
                         setZoomedImage({ url: item.fullCompositeImg!, title: item.title });
                       }}
-                      className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#2D0C13]/80 hover:bg-[#8B263E] text-white flex items-center justify-center border border-[#D8C4BA]/40 transition opacity-80 hover:opacity-100 shadow-md"
+                      className="absolute top-3 right-3 w-8 h-8 rounded-full bg-[#2D0C13]/80 hover:bg-[#C9A6A5] text-white flex items-center justify-center border border-[#D8C4BA]/40 transition opacity-80 hover:opacity-100 shadow-md"
                       title="Agrandir l'image"
                     >
                       <Maximize2 size={13} />
@@ -336,10 +336,10 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
 
                 {/* Card Content */}
                 <div className="p-6">
-                  <div className="text-[10px] font-mono uppercase tracking-wider text-[#8B263E] font-bold">
+                  <div className="text-[10px] font-mono uppercase tracking-wider text-[#C9A6A5] font-bold">
                     {item.badge}
                   </div>
-                  <h4 className="font-serif text-lg text-[#43141C] mt-1.5 font-semibold group-hover:text-[#8B263E] transition">
+                  <h4 className="font-serif text-lg text-[#43141C] mt-1.5 font-semibold group-hover:text-[#C9A6A5] transition">
                     {item.title}
                   </h4>
                   <p className="mt-2 text-xs leading-5 text-[#6E2432] line-clamp-2">
@@ -350,7 +350,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
                     <span className="font-mono text-[11px]">{item.timeframe}</span>
                     <span className="text-[#43141C] font-semibold group-hover:translate-x-0.5 transition inline-flex items-center gap-1">
                       {t('details_btn')}
-                      <ArrowRight size={11} className="text-[#8B263E]" />
+                      <ArrowRight size={11} className="text-[#C9A6A5]" />
                     </span>
                   </div>
                 </div>
@@ -364,7 +364,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
           id="results-medical-disclaimer"
           className="mt-10 p-5 rounded-2xl bg-white border border-[#D8C4BA]/50 flex items-start gap-3.5 text-xs text-[#6E2432] shadow-xs"
         >
-          <Info size={16} className="text-[#8B263E] shrink-0 mt-0.5" />
+          <Info size={16} className="text-[#C9A6A5] shrink-0 mt-0.5" />
           <p>{t('results_disclaimer')}</p>
         </div>
 
@@ -377,7 +377,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
           >
             <div className="w-full max-w-5xl flex items-center justify-between pb-4 border-b border-[#D8C4BA]/30 text-white">
               <div className="flex items-center gap-3">
-                <span className="text-[10px] font-mono uppercase tracking-wider text-[#FAF4F0] font-bold px-2.5 py-1 rounded bg-[#8B263E] border border-[#8B263E]">
+                <span className="text-[10px] font-mono uppercase tracking-wider text-[#FAF4F0] font-bold px-2.5 py-1 rounded bg-[#C9A6A5] border border-[#C9A6A5]">
                   Vue Haute Définition
                 </span>
                 <h3 className="font-serif text-lg text-white font-medium">{zoomedImage.title}</h3>
@@ -385,7 +385,7 @@ export const BeforeAfterSection: React.FC<BeforeAfterSectionProps> = ({
               <button
                 type="button"
                 onClick={() => setZoomedImage(null)}
-                className="w-10 h-10 rounded-full bg-[#43141C] border border-[#D8C4BA]/40 hover:bg-[#8B263E] text-white flex items-center justify-center transition cursor-pointer"
+                className="w-10 h-10 rounded-full bg-[#43141C] border border-[#D8C4BA]/40 hover:bg-[#C9A6A5] text-white flex items-center justify-center transition cursor-pointer"
               >
                 <X size={18} />
               </button>

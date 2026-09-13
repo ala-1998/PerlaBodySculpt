@@ -46,18 +46,9 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onOpenBooking }) =>
                 target="_blank" 
                 rel="noopener noreferrer" 
                 aria-label="Instagram Perla"
-                className="w-10 h-10 rounded-xl bg-white border border-[#D8C4BA]/50 grid place-items-center text-[#43141C] hover:text-[#8B263E] hover:border-[#8B263E] transition shadow-xs"
+                className="w-10 h-10 rounded-xl bg-white border border-[#D8C4BA]/50 grid place-items-center text-[#43141C] hover:text-[#C9A6A5] hover:border-[#C9A6A5] transition shadow-xs"
               >
                 <Instagram size={15} />
-              </a>
-              <a 
-                href="https://facebook.com" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                aria-label="Facebook Perla"
-                className="w-10 h-10 rounded-xl bg-white border border-[#D8C4BA]/50 grid place-items-center text-[#43141C] hover:text-[#8B263E] hover:border-[#8B263E] transition shadow-xs"
-              >
-                <Facebook size={15} />
               </a>
               <a 
                 href="https://wa.me/21626723876" 
@@ -83,20 +74,20 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onOpenBooking }) =>
                 rel="noopener noreferrer" 
                 className="flex items-start gap-3 hover:text-[#25D366] transition group"
               >
-                <Phone size={15} className="text-[#8B263E] shrink-0 mt-0.5" />
+                <Phone size={15} className="text-[#C9A6A5] shrink-0 mt-0.5" />
                 <span className="font-mono text-[#43141C] group-hover:text-[#25D366] font-semibold">+216 26 723 876</span>
               </a>
 
               <a 
                 href="mailto:perlabodyartcontact@gmail.com" 
-                className="flex items-start gap-3 hover:text-[#8B263E] transition group"
+                className="flex items-start gap-3 hover:text-[#C9A6A5] transition group"
               >
-                <Mail size={15} className="text-[#8B263E] shrink-0 mt-0.5" />
-                <span className="font-mono text-[#43141C] group-hover:text-[#8B263E]">perlabodyartcontact@gmail.com</span>
+                <Mail size={15} className="text-[#C9A6A5] shrink-0 mt-0.5" />
+                <span className="font-mono text-[#43141C] group-hover:text-[#C9A6A5]">perlabodyartcontact@gmail.com</span>
               </a>
 
               <div className="flex items-start gap-3">
-                <MapPin size={15} className="text-[#8B263E] shrink-0 mt-0.5" />
+                <MapPin size={15} className="text-[#C9A6A5] shrink-0 mt-0.5" />
                 <span className="leading-relaxed text-[#6E2432]">
                   Les Berges du Lac 2, Tunis, Tunisie
                 </span>
@@ -140,7 +131,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang, onOpenBooking }) =>
               <a href="#home" className="block hover:text-[#43141C] transition">Accueil</a>
               <a href="#results" className="block hover:text-[#43141C] transition">Résultats Avant/Après</a>
               <a href="#procedures" className="block hover:text-[#43141C] transition">Interventions</a>
-              <a href="#surgeon" className="block hover:text-[#43141C] transition">Notre Chirurgien</a>
+              <a href="#surgeon" className="block hover:text-[#43141C] transition">Nos Chirurgien</a>
               <a href="#guide" className="block hover:text-[#43141C] transition">Parcours Patient</a>
               <a href="#estimator" className="block hover:text-[#43141C] transition">Simulateur</a>
               <a href="#contact" className="block hover:text-[#43141C] transition">Contact & Accès</a>

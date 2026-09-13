@@ -118,7 +118,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
       description: 'Restauration de plénitude et de galbe avec implants en gel cohésif dernière génération ou transfert de graisse autologue.',
       preOpChecklist: [
         'Mammographie et échographie mammaire préopératoire récentes indispensables',
-        'Essayage précis des gabarits et volumes lors de la consultation avec notre chirurgien',
+        'Essayage précis des gabarits et volumes lors de la consultation avec nos chirurgiens',
         'Prévoir l’arrêt des activités sportives intenses du haut du corps pendant 6 semaines',
         'Soins locaux quotidiens des micro-cicatrices dès le retrait du pansement'
       ]
@@ -137,7 +137,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
         {/* Header */}
         <div className="max-w-3xl mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-mono font-bold uppercase tracking-wider border border-[#D8C4BA]/50 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5]" />
             <span>{t('estimator_tag')}</span>
           </div>
           <h2 
@@ -168,12 +168,12 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
                   onClick={() => setSelectedOpt(opt)}
                   className={`w-full p-5 rounded-2xl text-left transition-all duration-200 border flex items-center justify-between shadow-xs ${
                     isSelected
-                      ? 'bg-white border-[#8B263E] shadow-xl ring-2 ring-[#8B263E]/20'
-                      : 'bg-white/80 border-[#D8C4BA]/40 hover:border-[#8B263E] hover:bg-white'
+                      ? 'bg-white border-[#C9A6A5] shadow-xl ring-2 ring-[#C9A6A5]/20'
+                      : 'bg-white/80 border-[#D8C4BA]/40 hover:border-[#C9A6A5] hover:bg-white'
                   }`}
                 >
                   <div>
-                    <span className="text-[10px] uppercase font-mono tracking-wider text-[#8B263E] font-bold">
+                    <span className="text-[10px] uppercase font-mono tracking-wider text-[#C9A6A5] font-bold">
                       {opt.category}
                     </span>
                     <h3 className="font-serif text-base font-semibold text-[#43141C] mt-1">
@@ -181,7 +181,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
                     </h3>
                   </div>
                   <div className={`w-6 h-6 rounded-full border grid place-items-center shrink-0 ${
-                    isSelected ? 'border-[#8B263E] bg-[#8B263E] text-white' : 'border-[#D8C4BA]/60'
+                    isSelected ? 'border-[#C9A6A5] bg-[#C9A6A5] text-white' : 'border-[#D8C4BA]/60'
                   }`}>
                     {isSelected && <CheckCircle2 size={14} />}
                   </div>
@@ -197,7 +197,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
           >
             <div className="flex flex-wrap items-center justify-between gap-4 pb-6 border-b border-[#D8C4BA]/40">
               <div>
-                <span className="text-[10px] uppercase font-mono tracking-wider text-[#8B263E] font-bold">
+                <span className="text-[10px] uppercase font-mono tracking-wider text-[#C9A6A5] font-bold">
                   Protocole Estimatif Recommandé
                 </span>
                 <h3 className="font-serif text-2xl sm:text-3xl text-[#43141C] mt-1 font-semibold">
@@ -237,7 +237,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
                 <span className="text-[10px] uppercase font-mono tracking-wider text-[#6E2432] block">
                   Convalescence
                 </span>
-                <div className="font-serif text-lg font-bold text-[#8B263E] mt-1">
+                <div className="font-serif text-lg font-bold text-[#C9A6A5] mt-1">
                   {selectedOpt.recoveryEstimate}
                 </div>
               </div>
@@ -254,7 +254,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
 
             {/* Garment note */}
             <div className="mt-6 p-4 rounded-2xl bg-[#FAF4F0] border border-[#D8C4BA]/40 text-xs text-[#6E2432] flex items-center gap-3">
-              <ShieldCheck size={18} className="text-[#8B263E] shrink-0" />
+              <ShieldCheck size={18} className="text-[#C9A6A5] shrink-0" />
               <div>
                 <span className="font-bold text-[#43141C]">Contention post-opératoire :</span> {selectedOpt.recommendedSuit}
               </div>
@@ -263,7 +263,7 @@ export const ProcedureEstimator: React.FC<ProcedureEstimatorProps> = ({
             {/* Checklist */}
             <div className="mt-7">
               <h4 className="text-xs uppercase font-mono tracking-wider text-[#43141C] font-bold mb-3 flex items-center gap-2">
-                <FileText size={14} className="text-[#8B263E]" />
+                <FileText size={14} className="text-[#C9A6A5]" />
                 <span>Consignes & Préparation médicale recommandée :</span>
               </h4>
               <ul className="space-y-2.5">

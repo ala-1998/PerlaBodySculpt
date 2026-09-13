@@ -102,7 +102,7 @@ export default function App() {
   const isRtl = currentLang === 'ar';
 
   return (
-    <div className={`min-h-screen bg-[#FAF4F0] text-[#43141C] transition-colors duration-300 relative selection:bg-[#8B263E]/20 selection:text-[#43141C] ${isRtl ? 'rtl' : 'ltr'}`}>
+    <div className={`min-h-screen bg-[#FAF4F0] text-[#43141C] transition-colors duration-300 relative selection:bg-[#C9A6A5]/20 selection:text-[#43141C] ${isRtl ? 'rtl' : 'ltr'}`}>
       
       {/* Global Luxury Atmosphere Background with Silhouette & Floating Water/Pearl Bubbles */}
       <PerlaAtmosphereBackground />

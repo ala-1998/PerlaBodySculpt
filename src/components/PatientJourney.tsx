@@ -36,14 +36,14 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
   const renderIcon = (iconName: string) => {
     switch (iconName) {
       case 'ShieldCheck':
-        return <ShieldCheck size={24} className="text-[#8B263E]" />;
+        return <ShieldCheck size={24} className="text-[#C9A6A5]" />;
       case 'Sparkles':
-        return <Sparkles size={24} className="text-[#8B263E]" />;
+        return <Sparkles size={24} className="text-[#C9A6A5]" />;
       case 'Award':
-        return <Award size={24} className="text-[#8B263E]" />;
+        return <Award size={24} className="text-[#C9A6A5]" />;
       case 'HeartHandshake':
       default:
-        return <HeartHandshake size={24} className="text-[#8B263E]" />;
+        return <HeartHandshake size={24} className="text-[#C9A6A5]" />;
     }
   };
 
@@ -57,7 +57,7 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-[#43141C]/5 text-[#43141C] rounded-full text-xs font-mono font-bold uppercase tracking-wider border border-[#D8C4BA]/50 mb-4">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#8B263E]" />
+            <span className="w-1.5 h-1.5 rounded-full bg-[#C9A6A5]" />
             <span>{t('guide_tag')}</span>
           </div>
           <h2 
@@ -90,14 +90,14 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
                   key={step.step}
                   id={`journey-step-${step.step}`}
                   className={`bento-card group flex flex-col items-center text-center p-6 bg-white/95 border-[#D8C4BA]/50 shadow-md ${
-                    isHighlight ? 'border-[#8B263E] ring-2 ring-[#8B263E]/20' : ''
+                    isHighlight ? 'border-[#C9A6A5] ring-2 ring-[#C9A6A5]/20' : ''
                   }`}
                 >
                   {/* Step badge */}
                   <div 
                     className={`w-14 h-14 rounded-2xl grid place-items-center mb-5 transition-transform duration-300 group-hover:scale-110 shadow-lg ${
                       isHighlight
-                        ? 'bg-[#8B263E] text-white shadow-[#8B263E]/30'
+                        ? 'bg-[#C9A6A5] text-white shadow-[#C9A6A5]/30'
                         : 'bg-[#43141C] text-[#FAF4F0] border border-[#D8C4BA]/50'
                     }`}
                   >
@@ -168,7 +168,7 @@ export const PatientJourney: React.FC<PatientJourneyProps> = ({
               Prêt pour une transformation sereine et sur-mesure ?
             </h3>
             <p className="mt-3 text-xs sm:text-sm text-[#FAF4F0]/90 leading-relaxed">
-              Une première consultation ne vous engage à rien : c’est un espace d’échange bienveillant pour poser toutes vos questions directement à notre chirurgien spécialiste.
+              Une première consultation ne vous engage à rien : c’est un espace d’échange bienveillant pour poser toutes vos questions directement à nos chirurgiens spécialistes.
             </p>
             <div className="mt-7 flex flex-wrap items-center gap-3.5">
               <button

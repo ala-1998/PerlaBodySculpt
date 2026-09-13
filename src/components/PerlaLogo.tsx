@@ -49,7 +49,7 @@ export const PerlaLogo: React.FC<PerlaLogoProps> = ({
       {/* Optional text only if explicitly requested */}
       {showText && (
         <div className="leading-tight text-left ml-3">
-          <div className={`font-serif tracking-widest text-base font-bold ${textColor} group-hover:text-[#8B263E] transition-colors`}>
+          <div className={`font-serif tracking-widest text-base font-bold ${textColor} group-hover:text-[#C9A6A5] transition-colors`}>
             PERLA
           </div>
           <div className={`text-[10px] tracking-[0.24em] uppercase font-mono font-semibold ${subtextColor}`}>
