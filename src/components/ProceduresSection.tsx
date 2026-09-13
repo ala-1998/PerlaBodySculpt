@@ -64,7 +64,7 @@ export const ProceduresSection: React.FC<ProceduresSectionProps> = ({
               {t('procedures_title')}
             </h2>
             <p className="mt-3 text-[#6E2432] text-sm sm:text-base leading-relaxed max-w-2xl font-normal">
-              Découvrez l'ensemble de nos pôles d'excellence chirurgicale et de médecine esthétique en Tunisie, assurés par le Dr. Taher Jamel.
+              Découvrez l'ensemble de nos pôles d'excellence chirurgicale et de médecine esthétique en Tunisie, assurés par nos chirurgiens.
             </p>
           </div>
 

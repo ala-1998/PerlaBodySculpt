@@ -273,14 +273,6 @@ export const Navigation: React.FC<NavigationProps> = ({
         {/* Bottom Social & Theme Toggles */}
         <div className="mt-auto flex flex-col items-center gap-4 text-[#A07078] pt-4">
           <div className="h-8 w-px bg-[#43141C]" />
-          <button
-            id="theme-toggle-sidebar"
-            onClick={onToggleTheme}
-            aria-label="Toggle dark/light theme"
-            className="w-9 h-9 rounded-xl bg-[#43141C] border border-[#D8C4BA]/30 grid place-items-center text-[#E8D7D0] hover:text-[#D8C4BA] hover:border-[#D8C4BA]/50 transition"
-          >
-            {isDarkMode ? <Sun size={13} /> : <Moon size={13} />}
-          </button>
           <a 
             href="https://www.instagram.com/perla.bodysculpt?igsi=MWRtN2sxNTZ1dXFpYg%3D%3D" 
             target="_blank" 
