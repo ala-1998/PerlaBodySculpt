@@ -60,9 +60,15 @@ export const WhatsAppBodySilhouette: React.FC<WhatsAppSilhouetteProps> = ({
         strokeLinecap="round"
         fill="none"
       >
-        {/* 1. الكتف الأيمن والذراع الخارجي - منفصل عن الفخذ */}
+        {/* 1. الكتف الأيمن والذراع الخارجي - plus éloigné du corps */}
         <path
-          d="M 200 40 C 225 65, 255 95, 260 140 C 265 185, 255 235, 260 285 C 265 335, 280 385, 295 435"
+          d="
+            M 200 40
+            C 225 65, 255 95, 260 140
+            C 265 185, 255 235, 263 285
+            C 270 330, 292 375, 307 420
+            C 315 442, 318 455, 312 470
+          "
           strokeWidth="1.5"
         />
 
@@ -72,9 +78,16 @@ export const WhatsAppBodySilhouette: React.FC<WhatsAppSilhouetteProps> = ({
           strokeWidth="1.5"
         />
 
-        {/* 3. الخصر الأيسر والورك */}
+        {/* 3. Taille gauche + hanche + cuisse */}
         <path
-          d="M 125 170 C 110 210, 135 260, 160 295 C 165 325, 150 365, 135 400 C 130 415, 132 435, 140 455"
+          d="
+            M 125 170
+            C 113 204, 126 238, 150 270
+            C 163 287, 166 304, 162 322
+            C 158 343, 148 363, 140 382
+            C 132 401, 130 420, 135 438
+            C 136 444, 138 450, 140 455
+          "
           strokeWidth="1.5"
         />
 
