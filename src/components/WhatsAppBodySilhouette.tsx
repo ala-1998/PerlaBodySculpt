@@ -78,21 +78,37 @@ export const WhatsAppBodySilhouette: React.FC<WhatsAppSilhouetteProps> = ({
           strokeWidth="1.5"
         />
 
-        {/* 4. الفخذ الأيمن الداخلي - منفصل عن الذراع */}
+        {/* 4. Fkhadh droit intérieur - courbe plus naturelle */}
         <path
-          d="M 220 220 C 200 250, 195 285, 200 315 C 205 345, 230 375, 250 405 C 255 430, 250 455, 240 470"
+          d="
+            M 220 220
+            C 207 245, 198 270, 199 295
+            C 200 322, 214 346, 235 368
+            C 253 387, 260 406, 257 425
+            C 255 442, 248 457, 240 470
+          "
           strokeWidth="1.5"
         />
 
-        {/* 5. الساق اليمنى الخارجية - منفصلة */}
+        {/* 5. Contour extérieur jambe droite - plus fluide */}
         <path
-          d="M 215 230 C 235 275, 245 330, 275 395 C 280 425, 285 445, 280 465"
+          d="
+            M 215 230
+            C 225 258, 235 287, 242 315
+            C 249 342, 263 367, 275 391
+            C 286 414, 290 437, 284 455
+            C 283 459, 282 462, 280 465
+          "
           strokeWidth="1.3"
         />
 
-        {/* 6. خط الفخذ الأمامي */}
+        {/* 6. Ligne intérieure cuisse/jambe gauche - plus douce */}
         <path
-          d="M 200 365 C 185 390, 175 415, 175 470"
+          d="
+            M 200 365
+            C 188 382, 178 400, 173 419
+            C 169 437, 171 454, 175 470
+          "
           strokeWidth="1.3"
         />
       </g>
